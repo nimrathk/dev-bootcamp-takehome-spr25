@@ -1,3 +1,41 @@
 /* Your Styles Here */
-body{
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #333533; 
+    font-family: 'Lato', sans-serif;
+    color: #6dd98c;
+    text-align: center;
+}
+
+.card {
+    width: 600px;
+    border-radius: 12px;
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(18, 23, 18, 0.15);
+    margin: 30px auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+h1 {
+    padding-bottom: 15pxx;
+    padding-top: 10px;
+}
+
+img {
+    width: 25%;
+    padding-top: 30px;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, #6dd98c , #c488fc);
+    padding: 40px 0;
+    width: 100%;
+    margin: 0;
+    display: block;
 }
