@@ -15,10 +15,28 @@
     </header>
 
     <img src="assets/thrifting_photo.jpg" alt="Nimrath thrifting image"/>
+    <button id="toggleBtn">Show Intro</button>
     <div class="card">
         <div class="card-content">
             <h1 id="main-title">Hey there!</h1>
-            <p id="bio">Nimrath Khanuja is a 2nd year Computer Science student at Georgia Tech.</p>
+            <p id="bio">Nimrath is a second-year Computer Science major from New Jersey who is passionate about using technology to create educational opportunities for underrepresented communities. In high school, she co-founded a coding bootcamp for middle schoolers through WheelsForAll and started her school's GirlsWhoCode chapter, growing it from 5 to 35 members. At Georgia Tech, she continues building impactful technology through projects like TrashAI (an app that helps students recycle correctly) while serving as a CS 1331 TA to help fellow students overcome programming challenges. She's excited to join Bits of Good to help nonprofits leverage technology in ways that amplify their community impact.</p>
         </div>
     </div>
+
+    <div class="gradient"></div>
+
+    <script>
+        const btn = document.getElementById('toggleBtn');
+        const card = document.querySelector('.card');
+
+        card.classList.add('is-hidden');
+        btn.textContent = 'Show Intro';
+    
+        btn.addEventListener('click', function () {
+            const hidden = card.classList.toggle('is-hidden');
+            btn.textContent = hidden ? 'Show Intro' : 'Hide Intro';
+        });
+    </script>
+    
+    
 </body>

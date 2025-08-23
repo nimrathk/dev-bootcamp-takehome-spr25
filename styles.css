@@ -14,7 +14,7 @@ body {
     width: 600px;
     border-radius: 12px;
     overflow: hidden; 
-    box-shadow: 0 4px 12px rgba(18, 23, 18, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     margin: 30px auto;
 }
 
@@ -23,8 +23,12 @@ body {
 }
 
 h1 {
-    padding-bottom: 15pxx;
+    padding-bottom: 20px;
     padding-top: 10px;
+}
+
+p {
+    color: white;
 }
 
 img {
@@ -38,4 +42,38 @@ img {
     width: 100%;
     margin: 0;
     display: block;
+}
+
+#toggleBtn {
+    margin-top: 16px;
+    background: #6dd98c;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+#toggleBtn:hover { filter: brightness(0.95); }
+
+.card {
+    transition: opacity 220ms ease, transform 220ms ease;
+}
+
+button {
+    color: #c488fc;
+}
+
+.is-hidden {
+    opacity: 0;
+    transform: translateY(8px);
+    pointer-events: none;
+}
+
+#toggleBtn {
+    display: block;
+    margin: 16px auto 0;
+    background: #c488fc;
+    color: white;   
 }
